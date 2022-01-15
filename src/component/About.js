@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Navbar from './Navbar';
 export default function About(){
   return(
     <div>
-      AboutUs
+      <Navbar/>
+      This is About section
     </div>
   );
 }
