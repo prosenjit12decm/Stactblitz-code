@@ -1,15 +1,26 @@
 import React from 'react';
 import './style.css';
-import { SampleComponent } from './SampleComponent';
-export default function App() {
-  return (
-    <>
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
+export default function App(){
+  return(
+    <div>
       <div>
-        <h1>Hello StackBlitz!</h1>
-        <p>Start editing to see some magic happen :)</p>
-      </div>
-      <SampleComponent bgcolor="red" a={10} b={20} />
-      <SampleComponent bgcolor="blue" a={10} b={20} />
-    </>
+        <Home/>
+        <About/>
+        <Contact/>
+       </div>
+       <Router>
+         <Roiuter>
+              <Route path="/" element={<Home/>} />
+              <Route path="/About" element={<About/>} />
+              <Route path="/Contact" element={<Contact/>} />
+         </Roiuter>
+       </Router>
+    </div>
   );
 }
