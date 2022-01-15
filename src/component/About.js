@@ -4,7 +4,7 @@ export default function About(){
   return(
     <div>
       <Navbar/>
-      This is About section
+      This is about section
     </div>
   );
 }

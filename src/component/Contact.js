@@ -4,7 +4,7 @@ export default function Contact(){
   return(
     <div>
       <Navbar/>
-      This is Contact section
+      This is contact section
     </div>
   );
 }

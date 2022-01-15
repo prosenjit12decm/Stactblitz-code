@@ -5,6 +5,7 @@ import About from './component/About';
 import Contact from './component/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
+import Product from './component/Product';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Product/:id" element={<Product />} />
         </Routes>
       </Router>
     </div>
